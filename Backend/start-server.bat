@@ -1,0 +1,3 @@
+@echo off
+echo Starting QuickMeds backend server...
+node server.js
