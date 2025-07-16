@@ -3,8 +3,9 @@ import express from 'express';
 const router = express.Router();
 
 // OpenAI API Configuration
-const OPENAI_API_KEY = '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';
-const OPENAI_API_URL = 'https://api.openai.com/v1/chat/completions';
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+const OPENAI_API_URL = process.env.OPENAI_API_URL;
+
 
 // @desc    Chat with OpenAI
 // @route   POST /api/chat
