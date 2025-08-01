@@ -7,7 +7,8 @@ const GoogleMap = ({ center, zoom = 15, markers = [] }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   // ✅ Hardcoded API Key
-  const apiKey = 'AIzaSyCbITvqSVi5E5GdRsCiTS9xwIt8SAOW3Tg';
+const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+
 
   // Load Google Maps script
   useEffect(() => {
