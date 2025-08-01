@@ -1,0 +1,365 @@
+.speciality-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f8f9ff 0%, #f0f7ff 100%);
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 40px 20px;
+}
+
+.speciality-section::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(73, 73, 239, 0.05) 0%, rgba(19, 194, 194, 0.05) 100%);
+  top: -150px;
+  left: -150px;
+  z-index: 0;
+}
+
+.speciality-section::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(19, 194, 194, 0.05) 0%, rgba(73, 73, 239, 0.05) 100%);
+  bottom: -100px;
+  right: -100px;
+  z-index: 0;
+}
+
+#speciality {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #333;
+  position: relative;
+  display: inline-block;
+}
+
+.heading span {
+  background: linear-gradient(90deg, #4949ef, #13c2c2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subheading {
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.specialist-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.specialist {
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  width: 220px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.specialist::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #4949ef, #13c2c2);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.specialist:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 20px 40px rgba(73, 73, 239, 0.15);
+}
+
+.specialist:hover::before {
+  transform: scaleX(1);
+}
+
+.specialist a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.specialist-icon-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f8f9ff 0%, #f0f7ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.specialist:hover .specialist-icon-container {
+  background: linear-gradient(135deg, rgba(73, 73, 239, 0.08) 0%, rgba(19, 194, 194, 0.08) 100%);
+}
+
+.specialist-icon-container::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px dashed transparent;
+  top: 0;
+  left: 0;
+  transition: all 0.4s ease;
+}
+
+.specialist:hover .specialist-icon-container::after {
+  border-color: rgba(73, 73, 239, 0.3);
+  animation: spin 15s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.images {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.1));
+}
+
+.specialist:hover .images {
+  transform: scale(1.15);
+}
+
+.image_name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 10px;
+  transition: color 0.3s ease;
+}
+
+.specialist:hover .image_name {
+  color: #4949ef;
+}
+
+.specialist-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.specialist-stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #4949ef;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.specialist-cta {
+  margin-top: 20px;
+  background: linear-gradient(90deg, #4949ef, #13c2c2);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+}
+
+.specialist:hover .specialist-cta {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.specialist-cta:hover {
+  box-shadow: 0 5px 15px rgba(73, 73, 239, 0.3);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 992px) {
+  .specialist {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .speciality-section {
+    padding: 60px 0;
+    border-radius: 15px;
+    margin: 30px 15px;
+  }
+  
+  .specialist-container {
+    gap: 20px;
+  }
+  
+  .specialist {
+    width: 180px;
+    padding: 25px 15px;
+  }
+  
+  .specialist-icon-container {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+  }
+  
+  .images {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .image_name {
+    font-size: 16px;
+  }
+  
+  .heading {
+    font-size: 30px;
+  }
+  
+  .subheading {
+    font-size: 16px;
+  }
+  
+  .specialist-stats {
+    margin-top: 15px;
+  }
+  
+  .stat-value {
+    font-size: 16px;
+  }
+  
+  .stat-label {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .speciality-section {
+    border-radius: 10px;
+    margin: 20px 10px;
+  }
+  
+  .specialist-container {
+    gap: 15px;
+  }
+  
+  .specialist {
+    width: 150px;
+    padding: 20px 10px;
+  }
+  
+  .specialist-icon-container {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .images {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .image_name {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .specialist-description {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .heading {
+    font-size: 26px;
+  }
+  
+  .subheading {
+    font-size: 14px;
+  }
+  
+  .specialist-stats {
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+  
+  .stat-value {
+    font-size: 14px;
+  }
+  
+  .stat-label {
+    font-size: 9px;
+  }
+  
+  .specialist-cta {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+}

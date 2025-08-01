@@ -1,0 +1,19 @@
+{
+  "name": "quickmeds-fullstack",
+  "version": "1.0.0",
+  "description": "QuickMeds Full Stack Application",
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "npm run dev",
+    "install-all": "npm install && cd backend && npm install",
+    "build": "npm run build",
+    "start": "cd backend && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": ["healthcare", "react", "mongodb", "express"],
+  "author": "QuickMeds Team",
+  "license": "MIT"
+}

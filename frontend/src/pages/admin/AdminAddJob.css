@@ -1,0 +1,60 @@
+.admin-job-form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-job-form h2 {
+  margin-bottom: 25px;
+  text-align: center;
+  color: #0f172a;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.admin-job-form input,
+.admin-job-form textarea,
+.admin-job-form select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #f9fafb;
+  transition: border-color 0.2s ease;
+}
+
+.admin-job-form input:focus,
+.admin-job-form textarea:focus,
+.admin-job-form select:focus {
+  outline: none;
+  border-color: #38bdf8;
+  background-color: #ffffff;
+}
+
+.admin-job-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.admin-job-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #38bdf8;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.admin-job-form button:hover {
+  background-color: #0ea5e9;
+}

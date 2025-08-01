@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    overflow-y: scroll;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .header-container {
+    width: 100%;
+    min-height: 85vh;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e6f7ff 100%);
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .header-content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .header-left {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .header-right {
+    flex: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .header-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #2d3748;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+
+  .header-title span {
+    background: linear-gradient(90deg, #3182ce, #4299e1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline-block;
+  }
+
+  .header-subtitle {
+    font-size: 1.2rem;
+    color: #4a5568;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    max-width: 90%;
+  }
+
+  .header-features {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .feature-icon {
+    width: 54px;
+    height: 41px;
+    background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(49, 130, 206, 0.3);
+  }
+
+  .feature-text {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4a5568;
+  }
+
+  .image-container {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: transparent;
+    padding: 0;
+  }
+
+
+
+  .booking-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.9rem 1.8rem;
+    background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(66, 153, 225, 0.3);
+  }
+
+  .arrow-icon {
+    margin-left: 10px;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+  }
+
+  .booking-btn:hover {
+    background: linear-gradient(135deg, #3182ce 0%, #2c5282 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(49, 130, 206, 0.4);
+  }
+
+  .booking-btn:hover .arrow-icon {
+    transform: translateX(5px);
+  }
+
+/* Responsive design for header */
+@media (max-width: 992px) {
+    .header-title {
+        font-size: 3rem;
+    }
+
+    .header-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .header-features {
+        flex-wrap: wrap;
+    }
+
+    .feature-item {
+        min-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        padding: 30px 15px;
+    }
+
+    .header-content {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .header-left, .header-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-title {
+        font-size: 2.5rem;
+    }
+
+    .header-subtitle {
+        font-size: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+     .header-features {
+        justify-content: center;
+    } 
+
+    .image-container {
+        height: 350px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        padding: 20px 10px;
+    }
+
+    .header-title {
+        font-size: 2rem;
+    }
+
+    .header-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .header-features {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .feature-item {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .booking-btn {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.4rem;
+    }
+
+    .image-container {
+        height: 300px;
+        margin-bottom: 15px;
+        padding: 0;
+    }
+}

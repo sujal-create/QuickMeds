@@ -1,0 +1,27 @@
+.user-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+}
+.user-avatar {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.user-info:hover .user-avatar {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 480px) {
+  .user-avatar {
+    width: 35px !important;
+    height: 35px !important;
+  }
+}

@@ -1,0 +1,66 @@
+.admin-layout {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafc;
+}
+
+/* Sidebar */
+.admin-sidebar {
+  width: 240px;
+  background-color: #1e293b;
+  padding: 30px 20px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-sidebar h2 {
+  margin-bottom: 30px;
+  font-size: 22px;
+  color: #38bdf8;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 10px;
+}
+
+.admin-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admin-sidebar li {
+  margin-bottom: 15px;
+}
+
+.admin-sidebar a {
+  display: block;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #cbd5e1;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.admin-sidebar a:hover {
+  background-color: #334155;
+  color: #ffffff;
+}
+
+.admin-sidebar a.active {
+  background-color: #38bdf8;
+  color: #0f172a;
+  font-weight: bold;
+}
+
+/* Content Area */
+.admin-content {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}

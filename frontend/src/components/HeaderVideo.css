@@ -1,0 +1,92 @@
+.video-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 20px 50px rgba(0, 123, 255, 0.15);
+  background: linear-gradient(135deg, #f0f9ff 0%, #e6f7ff 100%);
+}
+
+.blue-heartbeat-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.heartbeat-svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.heartbeat-path {
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+  animation: dash 4s linear infinite;
+  filter: drop-shadow(0 0 5px rgba(77, 171, 247, 0.7));
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1500;
+  }
+  40% {
+    stroke-dashoffset: 0;
+  }
+  60% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -1500;
+  }
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
+  border-radius: 20px;
+  z-index: 3;
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    border-radius: 8px;
+  }
+
+  .header-video {
+    border-radius: 8px;
+  }
+
+  .video-overlay {
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-container {
+    border-radius: 6px;
+  }
+
+  .header-video {
+    border-radius: 6px;
+  }
+
+  .video-overlay {
+    border-radius: 6px;
+  }
+}

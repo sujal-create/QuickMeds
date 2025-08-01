@@ -1,0 +1,282 @@
+.footer {
+    background: linear-gradient(135deg, #1a2a3a 0%, #2c3e50 100%);
+    color: #f8f9fa;
+    padding: 50px 20px 20px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 0;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+}
+.footer::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+    bottom: 100%;
+    left: 10%;
+    right: 10%;
+    z-index: -1;
+    margin-bottom: 10px;
+}
+
+
+/* Align sections properly */
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Equal spacing */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    gap: 30px;
+}
+
+/* Individual sections */
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    padding: 15px;
+    border-radius: 10px; /* Smooth edges */
+    transition: all 0.3s ease;
+}
+
+.footer-section.about {
+    flex: 2;
+    text-align: left;
+}
+
+.footer-section.company {
+    text-align: center;
+}
+
+.footer-section.contact {
+    text-align: right;
+}
+
+/* Logo styling */
+.footer .mylogo {
+    max-width: 60px;
+    height: 60px;
+    display: inline-block;
+    margin-right: 10px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+/* Logo with text */
+.footer .logo-name {
+    font-size: 24px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.footer .logo-name span {
+    background: linear-gradient(135deg, #4dabf7, #13c2c2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Section titles */
+.footer-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #4dabf7;
+}
+
+/* Company section with unique color */
+.company h3 {
+    color: #4dabf7; /* Modern blue */
+    font-weight: bold;
+}
+
+/* Company links */
+.company ul {
+    list-style: none;
+    padding: 0;
+}
+
+.company ul li {
+    margin: 12px 0;
+}
+
+.company ul li a {
+    text-decoration: none;
+    color: #e9ecef;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    position: relative;
+    padding-left: 0;
+}
+
+.company ul li a::before {
+    content: '→';
+    position: absolute;
+    left: -15px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.company ul li a:hover {
+    color: #4dabf7;
+    padding-left: 20px;
+}
+
+.company ul li a:hover::before {
+    opacity: 1;
+    left: 0;
+}
+
+/* Get in Touch section with unique color */
+.contact h3 {
+    color: #4dabf7; /* Matching blue */
+    font-weight: bold;
+}
+
+.contact p {
+    margin: 15px 0;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.contact p svg {
+    font-size: 18px;
+    color: #4dabf7;
+}
+
+/* Remove unwanted line */
+.contact-line {
+    display: none; /* Hide line */
+}
+
+/* Footer bottom */
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    padding: 20px 0;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #adb5bd;
+}
+
+/* Social media icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    background-color: #4dabf7;
+    transform: translateY(-3px);
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    .footer-container {
+        gap: 20px;
+    }
+
+    .footer-section {
+        min-width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-section.about {
+        text-align: center;
+    }
+
+    .footer-section.contact {
+        text-align: center;
+    }
+
+    .footer .logo-name {
+        justify-content: center;
+    }
+
+    .footer-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .contact p {
+        justify-content: center;
+    }
+
+    .company ul li a:hover {
+        padding-left: 0;
+    }
+
+    .company ul li a::before {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 30px 15px 10px;
+    }
+
+    .footer-container {
+        padding: 10px;
+    }
+
+    .footer .mylogo {
+        max-width: 50px;
+        height: 50px;
+    }
+
+    .footer .logo-name {
+        font-size: 20px;
+    }
+}
