@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Banner from "../components/Banner";
 import Header from "../components/Header";
-import Speciality from "../components/speciality";
+import Speciality from "../components/Speciality";
 import Top_doctors from "../components/Top_doctors";
 
 const Home = () => {

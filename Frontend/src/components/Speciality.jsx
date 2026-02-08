@@ -1,4 +1,4 @@
-import "./speciality.css";
+import "./Speciality.css";
 import {Specialists} from "../assets/assets";
 import { Link } from "react-router-dom";
 
