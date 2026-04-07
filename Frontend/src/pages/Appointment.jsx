@@ -195,7 +195,7 @@ const Appointment = () => {
                   <p className="doctor-specialty">{docInfo.specialty}</p>
                   <p className="doctor-degree">{docInfo.degree}</p>
                   <p className="doctor-experience">{docInfo.experience}</p>
-                  {docInfo.fees && <p className="doctor-fees">Consultation Fee: ${docInfo.fees}</p>}
+                  {docInfo.fees && <p className="doctor-fees">Consultation Fee: {docInfo.fees}</p>}
                 </div>
               </div>
 

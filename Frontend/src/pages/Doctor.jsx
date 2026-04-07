@@ -159,12 +159,12 @@ const Doctor = () => {
                 <div className="doctor-details-row">
                   <div className="doctor-experience2">
                     <FaClock />
-                    {item.experience}
+                    {item.experience} Experience
                   </div>
                   {item.fees && (
                     <div className="doctor-fees">
                       
-                      ${item.fees}
+                      {item.fees}
                     </div>
                   )}
                 </div>

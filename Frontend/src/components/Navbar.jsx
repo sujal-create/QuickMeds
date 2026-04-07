@@ -144,6 +144,7 @@ const Navbar = () => {
           <li>CONTACT</li>
           <hr />
         </NavLink>
+        
       </ul>
 
 

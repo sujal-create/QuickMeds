@@ -37,7 +37,7 @@ export const doctorsData = [
     degree: "MBBS",
     experience: "4 Years",
     about: "Dedicated to providing personalized and patient-centered medical care.",
-    fees: 50,
+    fees: 500,
     available: true,
     address: {
       line1: "123 Medical Center Drive",
@@ -52,7 +52,7 @@ export const doctorsData = [
     degree: "MBBS, MD",
     experience: "6 Years",
     about: "Passionate about preventive medicine and chronic disease management.",
-    fees: 60,
+    fees: 600,
     available: false,
     address: {
       line1: "456 Health Avenue",
@@ -67,7 +67,7 @@ export const doctorsData = [
     degree: "MBBS, MD, DM (Gastro)",
     experience: "10 Years",
     about: "Expert in digestive health and liver diseases.",
-    fees: 40,
+    fees: 1400,
     available: true,
     address: {
       line1: "789 Digestive Care Center",
@@ -82,7 +82,7 @@ export const doctorsData = [
     degree: "MBBS, MD, DM (Neurology)",
     experience: "8 Years",
     about: "Specialized in treating neurological disorders and brain health.",
-    fees: 50,
+    fees: 500,
     available: false,
     address: {
       line1: "234 Neuro Center",
@@ -97,7 +97,7 @@ export const doctorsData = [
     degree: "MBBS, MD",
     experience: "7 Years",
     about: "Focused on treating conditions related to the nervous system.",
-    fees: 80,
+    fees: 800,
     available: true,
     address: {
       line1: "567 Brain Health Clinic",
@@ -112,7 +112,7 @@ export const doctorsData = [
     degree: "MBBS, MS (OBG)",
     experience: "12 Years",
     about: "Providing expert care for women’s health and pregnancy.",
-    fees: 90,
+    fees: 900,
     available: true,
     address: {
       line1: "890 Women's Health Center",
@@ -127,7 +127,7 @@ export const doctorsData = [
     degree: "MBBS, MS (OBG), DGO",
     experience: "15 Years",
     about: "Expert in infertility treatments and high-risk pregnancies.",
-    fees: 75,
+    fees: 750,
     available: false,
     address: {
       line1: "321 Fertility Clinic",
@@ -142,7 +142,7 @@ export const doctorsData = [
     degree: "MBBS, MD (Pediatrics)",
     experience: "9 Years",
     about: "Caring for children's health from infancy to adolescence.",
-    fees: 80,
+    fees: 800,
     available: true,
     address: {
       line1: "432 Children's Medical Plaza",
@@ -157,7 +157,7 @@ export const doctorsData = [
     degree: "MBBS, MD (Dermatology)",
     experience: "5 Years",
     about: "Specialized in skin, hair, and nail care treatments.",
-    fees: 70,
+    fees: 700,
     available: false,
     address: {
       line1: "543 Skin Care Center",
@@ -172,7 +172,7 @@ export const doctorsData = [
     degree: "MBBS",
     experience: "4 Years",
     about: "Dedicated to diagnosing and treating a wide range of general health conditions.",
-    fees: 50,
+    fees: 500,
     available: true,
     address: {
       line1: "654 Primary Care Clinic",
@@ -187,7 +187,7 @@ export const doctorsData = [
     degree: "MD Dermatology",
     experience: "6 Years",
     about: "Provides effective skincare solutions and cosmetic dermatology treatments.",
-    fees: 80,
+    fees: 800,
     available: false,
     address: {
       line1: "765 Beauty Dermatology",
@@ -202,7 +202,7 @@ export const doctorsData = [
     degree: "MD Pediatrics",
     experience: "5 Years",
     about: "Committed to the physical and emotional well-being of children.",
-    fees: 70,
+    fees: 700,
     available: true,
     address: {
       line1: "876 Kids Health Center",
@@ -217,7 +217,7 @@ export const doctorsData = [
     degree: "MD Neurology",
     experience: "8 Years",
     about: "Expert in diagnosing and managing brain and nervous system disorders.",
-    fees: 45,
+    fees: 450,
     available: true,
     address: {
       line1: "987 Neurology Institute",
@@ -232,7 +232,7 @@ export const doctorsData = [
     degree: "DM Gastroenterology",
     experience: "7 Years",
     about: "Specialist in digestive system disorders and liver diseases.",
-    fees: 90,
+    fees: 900,
     available: false,
     address: {
       line1: "135 Digestive Health Center",
@@ -247,7 +247,7 @@ export const doctorsData = [
     degree: "MS Orthopedics",
     experience: "9 Years",
     about: "Performs surgeries and treatments for bone, joint, and muscle issues.",
-    fees: 65,
+    fees: 650,
     available: true,
     address: {
       line1: "246 Orthopedic Center",
@@ -262,7 +262,7 @@ export const doctorsData = [
     degree: "DM Cardiology",
     experience: "10 Years",
     about: "Focused on treating heart conditions and promoting cardiovascular health.",
-    fees: 55,
+    fees: 550,
     available: true,
     address: {
       line1: "357 Heart Institute",
@@ -277,7 +277,7 @@ export const doctorsData = [
     degree: "MD Endocrinology",
     experience: "6 Years",
     about: "Treats hormonal imbalances and metabolic disorders with precision.",
-    fees: 55,
+    fees: 550,
     available: true,
     address: {
       line1: "468 Endocrine Specialists",
@@ -292,7 +292,7 @@ export const doctorsData = [
     degree: "MD Oncology",
     experience: "11 Years",
     about: "Experienced in cancer diagnosis, treatment, and patient care strategies.",
-    fees: 75,
+    fees: 750,
     available: true,
     address: {
       line1: "579 Cancer Treatment Center",
@@ -307,7 +307,7 @@ export const doctorsData = [
     degree: "MD Psychiatry",
     experience: "8 Years",
     about: "Helps individuals manage mental health issues with compassion and expertise.",
-    fees: 95,
+    fees: 950,
     available: true,
     address: {
       line1: "680 Mental Health Clinic",
@@ -322,7 +322,7 @@ export const doctorsData = [
     degree: "MS Orthopedics",
     experience: "7 Years",
     about: "Specializes in joint replacement surgeries and sports injury treatments.",
-    fees: 60,
+    fees: 600,
     available: true,
     address: {
       line1: "789 Orthopedic Center",
@@ -337,7 +337,7 @@ export const doctorsData = [
     degree: "DM Cardiology",
     experience: "9 Years",
     about: "Expert in diagnosing and treating heart conditions and cardiovascular diseases.",
-    fees: 90,
+    fees: 900,
     available: true,
     address: {
       line1: "456 Heart Care Center",
@@ -352,7 +352,7 @@ export const doctorsData = [
     degree: "MD Psychiatry",
     experience: "8 Years",
     about: "Specializes in treating depression, anxiety, and other mental health conditions with compassionate care.",
-    fees: 65,
+    fees: 650,
     available: true,
     address: {
       line1: "234 Mental Health Center",
@@ -367,7 +367,7 @@ export const doctorsData = [
     degree: "MD Endocrinology",
     experience: "11 Years",
     about: "Provides comprehensive care for diabetes, thyroid disorders, and other hormonal conditions.",
-    fees: 80,
+    fees: 800,
     available: true,
     address: {
       line1: "567 Endocrine Specialists",
@@ -382,7 +382,7 @@ export const doctorsData = [
     degree: "MS Orthopedics",
     experience: "6 Years",
     about: "Specializes in minimally invasive orthopedic procedures and rehabilitation therapy.",
-    fees: 70,
+    fees: 700,
     available: true,
     address: {
       line1: "890 Sports Medicine Center",
@@ -412,7 +412,7 @@ export const doctorsData = [
     degree: "MD Psychiatry",
     experience: "9 Years",
     about: "Specializes in cognitive behavioral therapy and mood disorders treatment.",
-    fees: 75,
+    fees: 750,
     available: false,
     address: {
       line1: "456 Behavioral Health Center",
@@ -427,7 +427,7 @@ export const doctorsData = [
     degree: "MD Endocrinology",
     experience: "12 Years",
     about: "Provides specialized care for complex hormonal disorders and metabolic conditions.",
-    fees: 85,
+    fees: 850,
     available: true,
     address: {
       line1: "789 Metabolic Health Center",

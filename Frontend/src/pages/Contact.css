@@ -965,3 +965,10 @@ textarea.form-control2 {
     padding: 20px;
   }
 }
+.form-control{
+  background-color: #f8faff;
+  border-radius: 12px ;
+  border: 1px solid #ccc;
+  padding: 20px;
+ 
+}

@@ -57,7 +57,7 @@ const Alldoctors = [
     degree: "MBBS",
     experience: "4 Years",
     about: "Dedicated to providing personalized and patient-centered medical care.",
-    fees: 50,
+    fees: 500,
     address: {
       line1: "17th Cross, Richmond",
       line2: "Circle, Ring Road, London",
@@ -71,7 +71,7 @@ const Alldoctors = [
     degree: "MD Dermatology",
     experience: "6 Years",
     about: "Expert in skincare, specializing in acne and anti-aging treatments.",
-    fees: 80,
+    fees: 800,
     address: {
       line1: "21st Avenue, Greenfield",
       line2: "Maple Street, Toronto",
@@ -85,7 +85,7 @@ const Alldoctors = [
     degree: "MD Pediatrics",
     experience: "5 Years",
     about: "Compassionate healthcare provider for children of all ages.",
-    fees: 70,
+    fees: 1200,
     address: {
       line1: "5th Street, Sunrise Valley",
       line2: "Central Avenue, Boston",
@@ -99,7 +99,7 @@ const Alldoctors = [
     degree: "MD Neurology",
     experience: "8 Years",
     about: "Specializes in treating migraines and other neurological conditions.",
-    fees: 100,
+    fees: 1000,
     address: {
       line1: "12th Main, Brainwood",
       line2: "Neuro Lane, Chicago",
@@ -113,7 +113,7 @@ const Alldoctors = [
     degree: "DM Gastroenterology",
     experience: "7 Years",
     about: "Expert in digestive health and gastrointestinal treatments.",
-    fees: 90,
+    fees: 900,
     address: {
       line1: "Main Boulevard, Sector 7",
       line2: "Hilltop Road, Mumbai",
@@ -127,7 +127,7 @@ const Alldoctors = [
     degree: "MS Orthopedics",
     experience: "9 Years",
     about: "Specialist in bone and joint surgery and rehabilitation.",
-    fees: 120,
+    fees: 1200,
     address: {
       line1: "Sunshine Boulevard",
       line2: "Park Avenue, New York",
@@ -141,7 +141,7 @@ const Alldoctors = [
     degree: "DM Cardiology",
     experience: "10 Years",
     about: "Expert in heart health and cardiovascular treatments.",
-    fees: 150,
+    fees: 1500,
     address: {
       line1: "Heartline Street",
       line2: "Downtown Avenue, Los Angeles",
@@ -155,7 +155,7 @@ const Alldoctors = [
     degree: "MD Endocrinology",
     experience: "6 Years",
     about: "Specializes in diabetes and hormonal disorders.",
-    fees: 110,
+    fees: 1100,
     address: {
       line1: "Hormone Plaza",
       line2: "Health Street, Delhi",
@@ -170,7 +170,7 @@ const Alldoctors = [
     experience: "11 Years",
     about:
       "Expert in cancer diagnosis and treatment with a patient-focused approach.",
-    fees: 200,
+    fees: 1400,
     address: {
       line1: "Cancer Care Center",
       line2: "Riverfront Lane, Shanghai",
@@ -185,7 +185,7 @@ const Alldoctors = [
     experience: "8 Years",
     about:
       "Helps patients navigate mental health challenges with compassionate care.",
-    fees: 130,
+    fees: 1300,
     address: {
       line1: "Mind Wellness Street",
       line2: "Harmony Avenue, Dubai",

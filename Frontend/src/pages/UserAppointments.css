@@ -23,6 +23,7 @@
   transition: color 0.2s ease;
 }
 
+
 .back-link:hover {
   color: #1e40af;
 }
@@ -100,7 +101,10 @@
 
 .doctor-specialty {
   font-size: 14px;
-  color: #475569;
+  color: #a0b0c6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .appointment-status-badge span {
@@ -133,9 +137,9 @@
 
 .appointment-details {
   margin-top: 10px;
-  display: flex;
+
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 40px;
   font-size: 15px;
   color: #334155;
 }
@@ -148,6 +152,7 @@
   border-radius: 12px;
   padding: 24px;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
+   
 }
 
 .detail-header {

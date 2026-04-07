@@ -8,7 +8,7 @@ const PaymentPage = () => {
   const navigate = useNavigate();
   const { appointmentData } = location.state || {};
   const [isPaid, setIsPaid] = useState(false);
-
+  console.log("API URL:", import.meta.env.VITE_API_BASE_URL);
   // Load Razorpay script
   useEffect(() => {
     const script = document.createElement("script");
@@ -18,20 +18,18 @@ const PaymentPage = () => {
   }, []);
 
   // Fixed conversion rate
-  const dollarToRupee = 83.5;
-  const amountInRupees = appointmentData.doctorFees * dollarToRupee;
-  const amountInPaise = Math.round(amountInRupees * 100);
+ 
+  const amountInRupees = appointmentData.doctorFees
+  const amountInPaise = Math.round(amountInRupees);
 
   const handlePayment = async () => {
     try {
-      const { data } = await axios.post(
-      
-        `${import.meta.env.VITE_API_BASE_URL}/api/payment/create-order`,
-
-        {
-          amount: amountInPaise, // Send paise to backend
-        }
-      );
+  const { data } = await axios.post(
+  `${import.meta.env.VITE_API_BASE_URL}/api/payment/create-order`,
+  {
+    amount: amountInPaise,
+  }
+);
 
       const options = {
         key: import.meta.env.VITE_RAZORPAY_KEY_ID,
@@ -50,7 +48,7 @@ const PaymentPage = () => {
         prefill: {
           name: appointmentData.patientName || "Test User",
           email: "test@example.com",
-          contact: "9999999999",
+          contact: "",
         },
         theme: {
           color: "#13c2c2",

@@ -113,7 +113,7 @@ const UserAppointments = () => {
             <div className="no-data-message">
               <FaInfoCircle className="info-icon" />
               <h3>No Appointments Found</h3>
-              <p>You haven't booked any appointments yet.</p>
+              <p>You havent booked any appointments yet.</p>
               <Link to="/doctor" className="book-now-btn">Book an Appointment Now</Link>
             </div>
           </div>
@@ -190,10 +190,10 @@ const UserAppointments = () => {
                 </div>
 
                 <div className="appointment-details">
-                  <div className="detail-item"><strong>ID:</strong> #{appointment.id}</div>
-                  <div className="detail-item"><strong>Date:</strong> {formatDate(appointment.appointmentDate)}</div>
-                  <div className="detail-item"><strong>Time:</strong> {appointment.appointmentTime}</div>
-                  {appointment.doctorFees && <div className="detail-item"><strong>Fee:</strong> ${appointment.doctorFees}</div>}
+                  <div className="detail-item"><strong>ID:-  #{appointment.id}</strong> </div>
+                  <div className="detail-item"><strong>Date:- {formatDate(appointment.appointmentDate)}</strong> </div>
+                  <div className="detail-item"><strong>Time:- {appointment.appointmentTime}</strong></div>
+                  {appointment.doctorFees && <div className="detail-item"><strong>Fee:- {appointment.doctorFees}</strong> </div>}
                 </div>
               </div>
             ))}

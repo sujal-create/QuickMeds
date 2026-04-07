@@ -1,3 +1,4 @@
+
 .about-container {
   max-width: 1200px;
   margin: 40px auto 80px;
@@ -274,7 +275,7 @@
   left: 0;
   width: 100%;
   height: 5px;
-  background: linear-gradient(90deg, #4949ef, #13c2c2);
+  
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.4s ease;
@@ -322,9 +323,10 @@
 
 .benefit-icon {
   font-size: 48px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: #4949ef;
   transition: all 0.3s ease;
+  display: inline-block;
 }
 
 .benefit-card:hover .benefit-icon {

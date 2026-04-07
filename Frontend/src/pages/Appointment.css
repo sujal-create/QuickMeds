@@ -268,7 +268,7 @@ width: fit-content;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
+  gap: 7px;
   margin-top: 25px;
 }
 
@@ -327,7 +327,7 @@ width: fit-content;
   text-align: center;
   transition: all 0.3s ease;
   margin-top: 8px;
-margin-left: 28%;
+
 
 }
 
