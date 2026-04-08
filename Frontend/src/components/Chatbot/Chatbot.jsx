@@ -308,17 +308,18 @@ const Chatbot = () => {
           </div>
 
           <div className="chat-input-area">
-
+ 
             <textarea
               value={inputMessage}
               onChange={(e) => setInputMessage(e.target.value)}
               onKeyDown={handleKeyDown}
               placeholder="Type your message..."
+                 
             />
-
-            <button onClick={handleSendMessage}>
+<button onClick={handleSendMessage}>
               <FaPaperPlane />
             </button>
+           
 
           </div>
 

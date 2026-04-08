@@ -8,6 +8,10 @@
 html {
   transition: background-color 0.3s, color 0.3s;
 }
-img, svg, video, canvas, audio, iframe, embed, object {
-  display: inline;
+img, video, canvas, audio, iframe, embed, object {
+  display: block;
+}
+
+svg {
+  display: inline-block;
 }
