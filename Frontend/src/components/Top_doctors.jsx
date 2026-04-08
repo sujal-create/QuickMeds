@@ -23,7 +23,7 @@ const Top_doctors = () => {
       </p>
 
       <div className="doctors-grid">
-        {doc_images.Alldoctors.slice(0, 6).map((item) => (
+        {doc_images.Alldoctors.slice(0, 5).map((item) => (
           <div
             onClick={() => navigate(`/appointment/${item._id}`)}
             className="top-doctor2"
