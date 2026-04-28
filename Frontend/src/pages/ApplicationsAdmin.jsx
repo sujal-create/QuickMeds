@@ -13,20 +13,17 @@ const ApplicationsAdmin = () => {
   const toggleExpand = (id) => {
     setExpandedId((prev) => (prev === id ? null : id));
   };
-
-  const handleDownload = (url, filename) => {
-    const link = document.createElement("a");
-    link.href = `http://localhost:5000${url}`;
-    link.download = filename;
-    link.target = "_blank";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+function Handledelete(){
+  localStorage.removeItem("jobApplications");
+             
+  
+}
 
   return (
     <div className="applications-admin">
-      <h2>Job Applications</h2>
+      <h2 className="job-applications-title">Job Applications</h2>
+       <button 
+        className="delete-btne"onClick={Handledelete}>Delete All</button>
       {applications.length === 0 ? (
         <p>No applications yet.</p>
       ) : (
@@ -41,8 +38,9 @@ const ApplicationsAdmin = () => {
                 <button className="view-btn" onClick={() => toggleExpand(app.id)}>
                   {expandedId === app.id ? "Hide Details" : "View Full Data"}
                 </button>
+            
               </div>
-
+    
               {expandedId === app.id && (
                 <div className="application-details">
                   <p><strong>Address:</strong> {app.address}, {app.city}, {app.state} - {app.zipCode}</p>
@@ -78,6 +76,7 @@ const ApplicationsAdmin = () => {
                           <li key={index}>{cert.name}</li>
                         ))}
                       </ul>
+                     
                     </div>
                   )}
                 </div>

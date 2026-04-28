@@ -10,7 +10,10 @@ h2 {
   margin-bottom: 30px;
   color: #333;
 }
+.job-applications-title{
+  font-weight: bold;
 
+}
 .application-list {
   display: flex;
   flex-direction: column;
