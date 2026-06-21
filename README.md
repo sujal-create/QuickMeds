@@ -31,7 +31,7 @@ QuickMedics is a modern healthcare management platform that connects patients, d
 
 ## Overview
 
-Healthcare systems often face challenges such as appointment scheduling delays, paper-based prescriptions, fragmented patient records, and inefficient communication between patients and healthcare providers.
+Healthcare systems often face challenges such as appointment scheduling delays, fragmented patient records, and inefficient communication between patients and healthcare providers.
 
 QuickMedics addresses these challenges by providing an intuitive and scalable platform where patients can book appointments, doctors can manage prescriptions digitally, and administrators can monitor healthcare operations efficiently.
 
@@ -42,7 +42,6 @@ QuickMedics addresses these challenges by providing an intuitive and scalable pl
 Traditional healthcare workflows suffer from:
 
 - Manual appointment scheduling
-- Paper-based prescription management
 - Lack of centralized patient records
 - Difficulty in tracking medical reports
 - Poor communication between stakeholders
@@ -65,7 +64,6 @@ QuickMedics digitizes these processes to improve efficiency, accessibility, and 
 
 - Book appointments online
 - Access medical records
-- Download prescriptions
 - View healthcare reports
 
 ### 🛠️ Admin Portal
@@ -85,7 +83,6 @@ QuickMedics digitizes these processes to improve efficiency, accessibility, and 
 ### 🔔 Smart Reminders
 
 - Appointment notifications
-- Medicine reminders
 - Follow-up alerts
 
 ### 📄 Report Analysis
@@ -144,7 +141,7 @@ The project follows a component-based architecture using React.
 1. User Authentication
 2. Role-Based Access Control
 3. Appointment Scheduling
-4. Digital Prescription Generation
+4. Search for Job In hospitals
 5. Report Management
 6. Dashboard Analytics
 7. Notification & Reminder System
@@ -164,14 +161,12 @@ The project follows a component-based architecture using React.
 ### Patient Dashboard
 
 - Upcoming appointments
-- Prescription history
 - Health records
 
 ### Doctor Dashboard
 
 - Daily appointments
 - Patient management
-- Prescription generation
 
 ### Admin Dashboard
 
@@ -182,7 +177,6 @@ The project follows a component-based architecture using React.
 ### Additional Modules
 
 - Appointment Booking
-- Digital Prescription
 - Medical Report Analysis
 - Reminder System
 
@@ -235,7 +229,6 @@ QuickMedics successfully demonstrates how healthcare services can be digitized t
 ### Achievements
 
 - Improved appointment management
-- Digitalized prescription workflow
 - Better healthcare accessibility
 - Enhanced patient experience
 - Streamlined doctor-patient communication
@@ -247,7 +240,6 @@ The platform serves as a strong foundation for modern healthcare management syst
 ## Future Work
 
 - AI-powered health recommendations
-- Telemedicine integration
 - Online payment gateway
 - Video consultation support
 - Advanced analytics dashboard
