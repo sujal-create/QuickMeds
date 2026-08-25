@@ -217,6 +217,7 @@ const [showConfirmPassword, setShowConfirmPassword] = useState(false);
         disabled={success}
         className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 pr-10 ${errors.confirmPassword && "border-red-500"}`}
       />
+      
       <button
         type="button"
         onClick={() => setShowConfirmPassword(!showConfirmPassword)}

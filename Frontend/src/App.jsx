@@ -24,7 +24,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Chatbot from "./components/Chatbot/Chatbot";
-
+import SSO from "./pages/SSO";
 // user layout wrapper
 const UserLayout = ({ children }) => (
   <div className="mx-4 sm:mx-[10%]">
@@ -89,6 +89,10 @@ const App = () => {
 
         {/* fallback */}
         <Route path="*" element={<Navigate to="/" replace />} />
+        <Route
+  path="/sso"
+  element={<SSO />}
+/>
       </Routes>
     </>
   );
